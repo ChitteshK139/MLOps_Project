@@ -1,5 +1,5 @@
 import sys  # Any exception is getting controlled, sys library will automatically have that information 
-import logging
+from src.logger import logging
 
 def error_message_detail(error,error_detail:sys):  # Whenever exception is raised, push it on my own custom msg
     _,_,exc_tb=error_detail.exc_info()
